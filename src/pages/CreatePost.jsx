@@ -47,7 +47,7 @@ function CreatePost() {
       };
 
       
-      const postResponse = await axios.post('http://localhost:8000/media-post', postData,{ withCredentials: true });
+      const postResponse = await axios.post('https://socialmedia-server-0df3.onrender.com/media-post', postData,{ withCredentials: true });
 
       if (postResponse.data.message === 'post uploaded') {
         

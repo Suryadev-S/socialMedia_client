@@ -15,7 +15,7 @@ export default function Home() {
     const postDataToServer = async (data) => {
       try {
         console.log('Posting data to server:', data);
-        const response = await fetch('http://localhost:8000/posts', {
+        const response = await fetch('https://socialmedia-server-0df3.onrender.com/posts', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',

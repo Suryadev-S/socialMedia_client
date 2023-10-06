@@ -20,7 +20,7 @@ function Signup() {
     e.preventDefault();
     // Handle form submission here, e.g., send data to the server
     try {
-      const response = await axios.post('http://localhost:8000/signup-data', formData);
+      const response = await axios.post('https://socialmedia-server-0df3.onrender.com/signup-data', formData);
       const { message } = response.data;
       setResponseMessage(message); // 
       console.log('Form data submitted successfully:', response.data);

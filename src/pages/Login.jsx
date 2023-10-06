@@ -17,7 +17,7 @@ function Login() {
     e.preventDefault();
     // Handle form submission here, e.g., authentication logic
     try {
-      const response = await axios.post('http://localhost:8000/login-data', formData);
+      const response = await axios.post('https://socialmedia-server-0df3.onrender.com/login-data', formData);
       const { message } = response.data;
       setResponseMessage(message); // 
       localStorage.setItem('token', response.data.token);

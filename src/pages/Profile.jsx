@@ -13,7 +13,7 @@ function Profile() {
     const postDataToServer = async (data) => {
       try {
         console.log('Posting data to server:', data);
-        const response = await fetch('http://localhost:8000/profile', {
+        const response = await fetch('https://socialmedia-server-0df3.onrender.com/profile', {
           method: 'POST',
           headers: {
             'Content-Type': 'application/json',
